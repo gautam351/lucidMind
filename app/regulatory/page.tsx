@@ -69,7 +69,7 @@ export default function RegulatoryPage() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/* Header Banner */}
       <section className="relative py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center opacity-20" />
@@ -332,9 +332,9 @@ export default function RegulatoryPage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{step.step}</h3>
                   <p className="text-gray-600">{step.description}</p>
 
-                  {index < roadmapSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gray-300 transform translate-x-2" />
-                  )}
+                  {/* {index < roadmapSteps.length - 1 && (
+                    <div className="hidden md:block  top-8 left-full w-full h-0.5 bg-gray-300 transform translate-x-2" />
+                  )} */}
                 </motion.div>
               ))}
             </div>
