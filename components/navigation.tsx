@@ -39,10 +39,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <Brain className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">LucidMind</span>
+            <img src="/logo-removebg-preview.png" alt="Logo" className="h-10 w-25" />
           </Link>
 
           {/* Desktop Navigation */}

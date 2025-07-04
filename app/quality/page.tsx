@@ -49,7 +49,8 @@ const timeline = [
 ]
 
 const personas = [
-  {
+ 
+   {
     title: "Startups",
     subtitle: "Building from scratch",
     description:
@@ -80,7 +81,7 @@ export default function QualityPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-32 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('/undraw_throw-away_k2t5.png?height=600&width=1200')] bg-contain  bg-center opacity-30" />
 
         <motion.div
           className="container mx-auto px-4 text-center z-10 relative"
@@ -94,7 +95,7 @@ export default function QualityPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            No More Template-Dumping
+           Done with Template-Dumping Consultants?
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto"
@@ -102,7 +103,7 @@ export default function QualityPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            We Build Quality That Scales With You
+             No more Excel chaos, half-baked SOPs, or one-size-fits-none templates.
           </motion.p>
         </motion.div>
 
@@ -331,12 +332,22 @@ export default function QualityPage() {
             <Dialog open={isContactOpen} onOpenChange={setIsContactOpen}>
               <DialogTrigger asChild>
                 <Button
-                  size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  Talk to Our Quality Experts
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+              asChild
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <a
+              href={`mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
+                "Inquiry from LucidMind Website"
+              )}&body=${encodeURIComponent(
+                "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information. \n Thank you!"
+              )}`}
+              >
+                Talk to Our Quality Experts
+              
+              <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-md">
                 <DialogHeader>
