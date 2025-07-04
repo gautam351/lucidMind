@@ -64,7 +64,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800&width=1200')] bg-cover bg-center opacity-10" />
+        <div className="absolute inset-0 bg-[url('/undraw_legal-counsel_kdnh.png?height=500&width=1200')] bg-cover bg-center opacity-10" />
 
         <motion.div
           className="container mx-auto px-4 text-center z-10"

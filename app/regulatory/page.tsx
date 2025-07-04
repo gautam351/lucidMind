@@ -72,7 +72,7 @@ export default function RegulatoryPage() {
     <div className="min-h-screen ">
       {/* Header Banner */}
       <section className="relative py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/undraw_collaboration_dtwk.png?height=200&width=100')] bg-contain bg-center opacity-20" />
 
         <motion.div
           className="container mx-auto px-4 text-center z-10 relative"
@@ -110,6 +110,9 @@ export default function RegulatoryPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
                 Why Smart Regulatory Planning Matters
               </h2>
+              <p className="text-gray-700 mb-6">
+                Your device is almost ready. The business team’s chasing leads while you’re eyeing revenue. But without a smart regulatory strategy in place? That’s like starting out on a world tour without an itinerary!
+              </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -158,9 +161,9 @@ export default function RegulatoryPage() {
             >
               <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
                 <img
-                  src="/placeholder.svg?height=400&width=500"
+                  src="/undraw_business-decisions.png?height=800&width=500"
                   alt="Regulatory Strategy Visualization"
-                  className="w-full h-64 object-cover rounded-lg"
+                  className="w-full h-84 object-cover rounded-lg"
                 />
               </div>
             </motion.div>
@@ -179,9 +182,8 @@ export default function RegulatoryPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Global Approval Pathways</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Navigate complex international requirements with confidence. Each market has unique challenges - we know
-              them all.
+             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Navigate complex international requirements with confidence. Each market has unique challenges — we know them all. Regulatory clearances aren’t just boxes to tick — they shape how fast and far you can scale.
             </p>
           </motion.div>
 
@@ -236,7 +238,7 @@ export default function RegulatoryPage() {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Tailored to Your Needs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Whether you need comprehensive support or targeted expertise, we have the right solution for your stage.
+              Whether you need comprehensive support or targeted expertise, we have the right solution for your stage. At LucidMind Consulting, we help you map the right regulatory route — one that aligns with your device’s complexity, regulatory landscape and your market ambitions.
             </p>
           </motion.div>
 
@@ -311,6 +313,9 @@ export default function RegulatoryPage() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               From initial concept to market approval, we guide you through every critical milestone.
             </p>
+            <p className="text-gray-700 mt-4">
+              You’ll be surprised at the number of companies who wish they’d done this sooner!
+            </p>
           </motion.div>
 
           <div className="max-w-4xl mx-auto">
@@ -351,17 +356,27 @@ export default function RegulatoryPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8">Ready to Map Your Regulatory Strategy?</h2>
+           <h2 className="text-4xl font-bold text-white mb-8">
+              Don’t Leave Your Regulatory Strategy to Chance
+            </h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-              Book a free consultation to discuss your regulatory pathway and get expert guidance tailored to your
-              device.
+              Book a free consultation to discuss your regulatory pathway and get expert guidance tailored to your device.
             </p>
             <Button
+              asChild
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Book a Free Regulatory Roadmap Call
+              <a
+              href={`mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
+                "Inquiry from LucidMind Website"
+              )}&body=${encodeURIComponent(
+                "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information. \n Thank you!"
+              )}`}
+              >
+                Book a Free Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
           </motion.div>
         </div>
