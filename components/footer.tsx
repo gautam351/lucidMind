@@ -21,23 +21,24 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-16 flex flex-col items-center">
+      <div className="container mx-auto px-4  flex flex-col items-center">
       <div className="flex flex-col items-center w-full">
         {/* Brand Section */}
         <div className="flex flex-col items-center text-center justify-center mx-auto">
-        <Link href="/" className="flex items-center space-x-2 mb-6 justify-center">
-          <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-          <Brain className="h-5 w-5 text-white" />
-          </div>
-          <span className="text-xl font-bold">LucidMind Consulting</span>
+        <Link href="/" className="flex items-center justify-center">
+          <img
+            src="/logo-footer (2).png"
+            alt="Logo"
+            className="h-20 w-auto max-w-xs object-contain mb-1"
+            style={{ maxHeight: "60px" }}
+          />
         </Link>
         <p className="text-gray-400 mb-6 max-w-md">
-          Simplifying medical device regulatory and quality challenges. Innovation meets clarity for faster market
-          entry.
+         Compliance meets Clarity <br></br> Simplifying medical device regulatory and quality challenges. 
         </p>
         <div className="flex space-x-4 justify-center">
           <motion.a
-          href="https://in.linkedin.com/in/praveen-gautam-4817411b2"
+          href="https://www.linkedin.com/in/raj-zaveri-35013b174/"
           target="_blank"
           className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
           whileHover={{ scale: 1.1 }}

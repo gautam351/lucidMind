@@ -8,30 +8,31 @@ import { useState, useEffect } from "react"
 
 const testimonials = [
   {
+    quote: "Finally, regulatory consulting that speaks our language - clear, actionable, results-driven.",
+    author: "Rajeev Nohria",
+    title: "CEO",
+    company: "Better Diagnostics",
+  },
+  {
     quote: "LucidMind transformed our regulatory approach. What seemed impossible became achievable.",
     author: "Sarah Chen",
     title: "CEO, MedTech Innovations",
     company: "Series B Startup",
   },
-  {
-    quote: "Their quality system implementation saved us 6 months and countless headaches.",
-    author: "Dr. Michael Rodriguez",
-    title: "VP of Quality",
-    company: "Global Medical Devices",
-  },
-  {
-    quote: "Finally, regulatory consulting that speaks our language - clear, actionable, results-driven.",
-    author: "Jennifer Park",
-    title: "Regulatory Director",
-    company: "Emerging Technologies",
-  },
+  // {
+  //   quote: "Their quality system implementation saved us 6 months and countless headaches.",
+  //   author: "Dr. Michael Rodriguez",
+  //   title: "VP of Quality",
+  //   company: "Global Medical Devices",
+  // },
+  
 ]
 
 const highlights = [
   {
     icon: FileText,
     title: "Regulatory Strategy",
-    description: "Navigate complex pathways with confidence and clarity",
+    description: "Our tested regulatory strategies help you navigate complex pathways with confidence and clarity",
   },
   {
     icon: CheckCircle,
@@ -41,12 +42,12 @@ const highlights = [
   {
     icon: Award,
     title: "Submission & Approvals",
-    description: "Streamlined processes for faster market entry",
+    description: "Simplified and efficient submissions Accelerated approvals",
   },
   {
     icon: Zap,
-    title: "Deliberating with the regulatory bodies",
-    description: "Navigating approval talks with regulators",
+    title: "Liaising with regulators",
+    description: "Navigating approval talks with regulators around the globe",
   },
 ]
 
@@ -78,7 +79,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Medical meets <span className="text-blue-600">Clarity</span>
+            Compliance meets <span className="text-blue-600">Clarity</span>
           </motion.h1>
 
           <motion.p
@@ -87,18 +88,26 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Regulatory made simple.
+             Smart Compliance. Global Access.
           </motion.p>
 
+          <motion.p
+            className="text-lg md:text-xl text-gray-600 mb-4 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            We help you expedite medical device approvals across the US, EU, APAC & more.
+
+          </motion.p>
           <motion.p
             className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Bringing your medical device to market, without the maze.
+You innovate — we handle the regulatory grind
           </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -167,7 +176,7 @@ export default function HomePage() {
                 At <span className="text-black">LucidMind</span>, we believe true genius lies in simplicity.
               </h3>
               <p className="text-lg text-gray-600">
-                We simplify complexity with clear, actionable regulatory and quality solutions.
+                We simplify compliance with clear, actionable regulatory and quality solutions.
               </p>
             </motion.div>
           </motion.div>
@@ -221,7 +230,9 @@ export default function HomePage() {
                 End-to-end support to fast-track your device to market.
              
               </h3>
-             
+              <p className="text-lg text-gray-600 mb-8 text-center">
+                We take regulatory complexity off your plate so you can focus on building great products.
+              </p>
            
          
              
@@ -283,9 +294,9 @@ export default function HomePage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8">Ready to Simplify Your Path to Market?</h2>
+            <h2 className="text-4xl font-bold text-white mb-8">Ready to simplify your  device's path to market?</h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-              Let's discuss how we can accelerate your medical device journey with clarity and confidence.
+              Let’s simplify your regulatory journey and accelerate your device’s market entry.
             </p>
             <Button
               asChild
