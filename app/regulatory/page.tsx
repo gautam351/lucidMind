@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Globe, FileCheck, Zap, ChevronDown } from "lucide-react"
+import { ArrowRight, Globe, FileCheck, Zap, ChevronDown, FolderCheck, FileCode } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
@@ -9,26 +9,26 @@ import { useState } from "react"
 const globalPaths = [
   {
     region: "US FDA",
-    description: "510(k), PMA, De Novo pathways",
-    timeline: "6-18 months",
+    description: "510(k)",
+    timeline: "6-9 months",
     complexity: "High",
   },
   {
-    region: "EU MDR",
+    region: "EU MDR (Class IIA)",
     description: "CE marking, notified body approval",
-    timeline: "12-24 months",
-    complexity: "Very High",
+    timeline: "4-6 months",
+    complexity: "High",
   },
   {
-    region: "CDSCO (India)",
+    region: "CDSCO (Class C, D)",
     description: "Import license, clinical trials",
-    timeline: "8-15 months",
+    timeline: "3-5 months",
     complexity: "Medium",
   },
   {
-    region: "Health Canada",
+    region: "Health Canada (class II)",
     description: "Medical device license",
-    timeline: "6-12 months",
+    timeline: "2-3 months",
     complexity: "Medium",
   },
 ]
@@ -80,8 +80,8 @@ export default function RegulatoryPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Regulatory Strategy</h1>
-          <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">Don't Let Compliance Be an Afterthought</p>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Global regulatory guidance, built around you</h1>
+          {/* <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">Don't Let Compliance Be an Afterthought</p> */}
         </motion.div>
 
         {/* Floating elements */}
@@ -96,8 +96,11 @@ export default function RegulatoryPage() {
           transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
         />
       </section>
+         
+     
 
-      {/* Smart Planning Section */}
+      {/* service  1 */}
+            {/* Smart Planning Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -108,10 +111,11 @@ export default function RegulatoryPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                Why Smart Regulatory Planning Matters
+              <span className="text-blue-600"> Building regulatory strategy: </span>Don’t Let Compliance Be an Afterthought
               </h2>
               <p className="text-gray-700 mb-6">
                 Your device is almost ready. The business team’s chasing leads while you’re eyeing revenue. But without a smart regulatory strategy in place? That’s like starting out on a world tour without an itinerary!
+At LucidMind Consulting, we help you map the right regulatory route — one that aligns with your device’s complexity, regulatory landscape and your market ambitions. We make compliance part of your go-to-market strategy, not an obstacle to it. You’ll be surprised at the number of companies who wish they’d done this sooner!
               </p>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -170,7 +174,9 @@ export default function RegulatoryPage() {
           </div>
         </div>
       </section>
+  {/* smart planning section ends  */}
 
+       {/* service  ended */}
       {/* Global Approval Paths */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -182,8 +188,8 @@ export default function RegulatoryPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Global Approval Pathways</h2>
-             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Navigate complex international requirements with confidence. Each market has unique challenges — we know them all. Regulatory clearances aren’t just boxes to tick — they shape how fast and far you can scale.
+             <p className="text-xl text-gray-600 max-w-10xl mx-auto">
+              From the USFDA to the EU MDR, Health Canada, UKCA, CDSCO, and more, our strategies are meticulously crafted with a global perspective. We provide comprehensive support to guide you through approval processes across significant markets, including the United States, the European Union, Canada, the United Kingdom, the Middle East, India, ASEAN countries, and others. Our tailored and market-specific assistance ensures a seamless and efficient regulatory journey.
             </p>
           </motion.div>
 
@@ -225,7 +231,87 @@ export default function RegulatoryPage() {
           </div>
         </div>
       </section>
+     {/* service  3 */}
+            
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+             <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                <img
+                  src="/medicaldevices01.png?height=800&width=500"
+                  alt="Regulatory Strategy Visualization"
+                  className="w-full h-84 object-cover rounded-lg"
+                />
+              </div>
+            </motion.div>
+            
+            
+            
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              We’re the Go-Getters in Your Corner
+              </h2>
+              <p className="text-gray-700 mb-6">
+                With years of hands-on regulatory experience, we embed ourselves in your team and do the heavy lifting — so you don’t have to.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <FileCode className="h-4 w-4 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">From Scalpel to Software — We Handle It All</h3>
+                    <p className="text-gray-600">
+                      Whether it’s a traditional device, an AI-powered software (SaMD), or a wearable like a smartwatch that tracks health conditions, we’ve got your back. We’ll build your regulatory strategy, prep all your docs, and handle the back-and-forth with authorities so you don’t have to.<br/> No jargon, no black box — just clear, actionable steps.
+Because compliance shouldn’t be a bottleneck — it should be your launchpad.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <FolderCheck className="h-4 w-4 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Market Access</h3>
+                    <p className="text-gray-600">
+                      Understanding international requirements early opens doors to multiple markets simultaneously.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Zap className="h-4 w-4 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Faster Time to Market</h3>
+                    <p className="text-gray-600">
+                      Strategic planning reduces regulatory review cycles and accelerates your path to
+                      commercialization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
 
+           
+          </div>
+        </div>
+      </section>
+  {/* smart planning section ends  */}
+
+       {/* service  ended */}
       {/* Custom Offerings */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">

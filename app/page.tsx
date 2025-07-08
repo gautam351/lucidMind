@@ -42,7 +42,7 @@ const highlights = [
   {
     icon: Award,
     title: "Submission & Approvals",
-    description: "Simplified and efficient submissions Accelerated approvals",
+    description: "Simplified and efficient submissions. Accelerated approvals",
   },
   {
     icon: Zap,
@@ -294,7 +294,7 @@ You innovate — we handle the regulatory grind
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8">Ready to simplify your  device's path to market?</h2>
+            <h2 className="text-4xl font-bold text-white mb-8">Ready to expedite your  device's path to market?</h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
               Let’s simplify your regulatory journey and accelerate your device’s market entry.
             </p>
