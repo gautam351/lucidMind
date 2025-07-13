@@ -80,7 +80,7 @@ export default function RegulatoryPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Global regulatory guidance, built around you</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Global regulatory guidance. Built around you</h1>
           {/* <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">Don't Let Compliance Be an Afterthought</p> */}
         </motion.div>
 
@@ -111,7 +111,7 @@ export default function RegulatoryPage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              <span className="text-blue-600"> Building regulatory strategy: </span>Don’t Let Compliance Be an Afterthought
+              <span className="text-blue-600"> Building regulatory strategy: </span>Don’t let compliance be an afterthought
               </h2>
               <p className="text-gray-700 mb-6">
                 Your device is almost ready. The business team’s chasing leads while you’re eyeing revenue. But without a smart regulatory strategy in place? That’s like starting out on a world tour without an itinerary!
@@ -261,7 +261,7 @@ At LucidMind Consulting, we help you map the right regulatory route — one that
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-              We’re the Go-Getters in Your Corner
+              We’re the Go-Getters in your corner
               </h2>
               <p className="text-gray-700 mb-6">
                 With years of hands-on regulatory experience, we embed ourselves in your team and do the heavy lifting — so you don’t have to.
@@ -281,12 +281,13 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <FolderCheck className="h-4 w-4 text-green-600" />
+                    <FileCode className="h-4 w-4 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Market Access</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Collaborative Execution for Dossier Developmen</h3>
                     <p className="text-gray-600">
-                      Understanding international requirements early opens doors to multiple markets simultaneously.
+                      From 510(k), De Novo, Breakthrough designation, Tech file, and CER to Cybersecurity, IEC 62304, IEC 62366 documents and more; we prepare every required document with precision.  – We don’t just advise. We partner. Your goals become our mission.
+
                     </p>
                   </div>
                 </div>
@@ -295,10 +296,9 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
                     <Zap className="h-4 w-4 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Faster Time to Market</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Pragmatic, No-Fluff Approach</h3>
                     <p className="text-gray-600">
-                      Strategic planning reduces regulatory review cycles and accelerates your path to
-                      commercialization.
+                      Inspired by the FDA’s “least burdensome” principle, we aim for smart submissions, not bloated ones. This ensures that the approval lead times are minimized, predictable, and aligned with your go-to-market strategy.
                     </p>
                   </div>
                 </div>
@@ -322,9 +322,9 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Tailored to Your Needs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Tailored to your needs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Whether you need comprehensive support or targeted expertise, we have the right solution for your stage. At LucidMind Consulting, we help you map the right regulatory route — one that aligns with your device’s complexity, regulatory landscape and your market ambitions.
+              Whether you need comprehensive support or targeted expertise, we have the right solution for you. Whether you’re a manufacturer who needs complete end to end assistance, last-mile support or assistance with just a Presub/Qsub, we’re there for you to ensure you only pay for what you need.
             </p>
           </motion.div>
 
@@ -395,13 +395,11 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Your Journey to Market</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Your journey to market</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               From initial concept to market approval, we guide you through every critical milestone.
             </p>
-            <p className="text-gray-700 mt-4">
-              You’ll be surprised at the number of companies who wish they’d done this sooner!
-            </p>
+           
           </motion.div>
 
           <div className="max-w-4xl mx-auto">
@@ -443,7 +441,7 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
             viewport={{ once: true }}
           >
            <h2 className="text-4xl font-bold text-white mb-8">
-              Don’t Leave Your Regulatory Strategy to Chance
+              Cut through the regulatory noise
             </h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
               Book a free consultation to discuss your regulatory pathway and get expert guidance tailored to your device.

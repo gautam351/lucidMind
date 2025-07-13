@@ -42,10 +42,12 @@ const coverage = [
 ]
 
 const timeline = [
-  { phase: "Zero", description: "Current state assessment", duration: "Week 1-2" },
+  { phase: "Gap assessment", description: "Identifying and analyzing gaps", duration: "Week 1-2" },
   { phase: "Foundation", description: "Core QMS structure", duration: "Week 3-6" },
   { phase: "Implementation", description: "Process deployment", duration: "Week 7-12" },
   { phase: "Audit-Ready", description: "Validation & training", duration: "Week 13-16" },
+  { phase: "Internal Audit", description: "Evaluating QMS effectiveness and compliance through a structured internal audit.", duration: "Week 17" },
+
 ]
 
 const personas = [
@@ -95,7 +97,7 @@ export default function QualityPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-           Done with Template-Dumping Consultants?
+           Done with Template-Dumping consultants?
           </motion.h1>
           <motion.p
             className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto"
@@ -119,7 +121,27 @@ export default function QualityPage() {
           transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
         />
       </section>
-
+      
+      {/* Introduction Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-2"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Scalable QMS for Fast-Moving innovators</h2>
+            <p className="text-xl text-gray-600 max-w-6xl mx-auto">
+              Whether you’re building a traditional medical device or an AI/ML algorithm, setting up a Quality Management System (QMS) doesn’t have to be overwhelming or overly rigid. 
+Your QMS should reflect your product, your people, and your stage of growth.
+             </p>
+             <p className="text-xl text-gray-600 max-w-6xl mx-auto mt-4">
+At LucidMind consulting, We design clean, smart and scalable QMS that are actually usable. We closely work with each team of your organization to understand the gaps and build processes that are tailored to your unique needs and compliant with the relevant QS regulations: ISO 13485, FDA QSR (21 CFR Part 820), and EU MDR
+             </p>
+          </motion.div>
+        </div>
+        </section>
       {/* Problem-Solution Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -187,9 +209,9 @@ export default function QualityPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Complete Regulatory Coverage</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Global Compliance</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our quality systems are designed to meet the most stringent international standards.
+              Quality systems that are designed to meet the most stringent international standards.
             </p>
           </motion.div>
 
@@ -222,7 +244,7 @@ export default function QualityPage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -232,14 +254,53 @@ export default function QualityPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">From Zero to Audit-Ready</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our proven methodology takes you from quality chaos to audit confidence in 16 weeks.
+            <p className="text-xl text-left text-gray-600 max-w-3xl mx-auto">
+              Whether you’re a startup just stepping into regulatory waters or a mid-size company, scaling up with a growing product line,
+              
+                we help you go from zero to audit-ready minus the jargon and stress!
             </p>
+            
           </motion.div>
-
+         <motion.div
+            className="text-center mb-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+             <div className="grid lg:grid-cols-3 gap-8">
+            {personas.map((persona, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+                  <div className={`h-2 bg-gradient-to-r ${persona.color}`} />
+                  <CardContent className="p-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{persona.title}</h3>
+                    <p className="text-blue-600 font-medium mb-4">{persona.subtitle}</p>
+                    <p className="text-gray-600 mb-6">{persona.description}</p>
+                    <div className="space-y-3">
+                      {persona.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center space-x-3">
+                          <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                          <span className="text-gray-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+            </motion.div>
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Timeline line */}
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Roadmap to a compliant, scalable QMS</h2>
               <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-blue-200 hidden md:block" />
 
               <div className="space-y-8">
@@ -268,53 +329,7 @@ export default function QualityPage() {
         </div>
       </section>
 
-      {/* Persona Sections */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Solutions for Every Stage</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Whether you're just starting or preparing for certification, we have the right approach for your journey.
-            </p>
-          </motion.div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {personas.map((persona, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Card className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
-                  <div className={`h-2 bg-gradient-to-r ${persona.color}`} />
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{persona.title}</h3>
-                    <p className="text-blue-600 font-medium mb-4">{persona.subtitle}</p>
-                    <p className="text-gray-600 mb-6">{persona.description}</p>
-                    <div className="space-y-3">
-                      {persona.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center space-x-3">
-                          <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     
       {/* CTA Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4 text-center">
