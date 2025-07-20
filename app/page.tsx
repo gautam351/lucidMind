@@ -148,7 +148,7 @@ You innovate — we handle the regulatory grind
       </section>
 
       {/* Pain Point Section */}
-      <section className="py-20 bg-gray-50" id="section2">
+      <section className="py-16 bg-gray-50" id="section2">
         <div className="container mx-auto px-4 mb-16 mt-20">
           <motion.div
             className="max-w-4xl mx-auto text-center"

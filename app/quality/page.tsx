@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Award, FileText, X } from "lucide-react"
+import { ArrowRight, CheckCircle, Award, FileText, X, Zap, Globe, FileCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
@@ -82,7 +82,7 @@ export default function QualityPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-32 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/undraw_throw-away_k2t5.png?height=600&width=1200')] bg-contain  bg-center opacity-30" />
 
         <motion.div
@@ -123,27 +123,50 @@ export default function QualityPage() {
       </section>
       
       {/* Introduction Section */}
-      <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <motion.div
-            className="text-center mb-2"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Scalable QMS for Fast-Moving innovators</h2>
-            <p className="text-xl text-gray-600 max-w-6xl mx-auto">
-              Whether you’re building a traditional medical device or an AI/ML algorithm, setting up a Quality Management System (QMS) doesn’t have to be overwhelming or overly rigid. 
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+               Scalable QMS for Fast-Moving innovators
+              </h2>
+              <p className="text-gray-700 mb-6">
+                Whether you’re building a traditional medical device or an AI/ML algorithm, setting up a Quality Management System (QMS) doesn’t have to be overwhelming or overly rigid. 
 Your QMS should reflect your product, your people, and your stage of growth.
-             </p>
-             <p className="text-xl text-gray-600 max-w-6xl mx-auto mt-4">
-At LucidMind consulting, We design clean, smart and scalable QMS that are actually usable. We closely work with each team of your organization to understand the gaps and build processes that are tailored to your unique needs and compliant with the relevant QS regulations: ISO 13485, FDA QSR (21 CFR Part 820), and EU MDR
-             </p>
-          </motion.div>
+                  </p>
+               <p className="text-gray-700 mb-6">
+                At LucidMind consulting, We design clean, smart and scalable QMS that are actually usable. We closely work with each team of your organization to understand the gaps and build processes that are tailored to your unique needs and compliant with the relevant QS regulations: ISO 13485, FDA QSR (21 CFR Part 820), and EU MDR
+
+                  </p>
+            </motion.div>
+
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                <img
+                  src="/Gemini_Generated_Image_sgeoftsgeoftsgeo.png?height=800&width=500"
+                  alt="Regulatory Strategy Visualization"
+                  className="w-full h-58 object-cover rounded-lg"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
-        </section>
+      </section>
+
+     
       {/* Problem-Solution Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16  bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Problems */}
@@ -297,13 +320,17 @@ At LucidMind consulting, We design clean, smart and scalable QMS that are actual
             ))}
           </div>
             </motion.div>
-          <div className="max-w-4xl mx-auto">
+          
+        </div>
+      </section>
+    <section className="py-16 bg-white">
+<div className=" max-w-4xl mx-auto">
             <div className="relative">
               {/* Timeline line */}
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Roadmap to a compliant, scalable QMS</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center ">Roadmap to a compliant, scalable QMS</h2>
               <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-blue-200 hidden md:block" />
 
-              <div className="space-y-8">
+              <div className="space-y-8 mt-8">
                 {timeline.map((phase, index) => (
                   <motion.div
                     key={index}
@@ -326,9 +353,7 @@ At LucidMind consulting, We design clean, smart and scalable QMS that are actual
               </div>
             </div>
           </div>
-        </div>
       </section>
-
      
       {/* CTA Section */}
       <section className="py-20 bg-gray-900">
@@ -339,7 +364,7 @@ At LucidMind consulting, We design clean, smart and scalable QMS that are actual
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8">Ready to Build Quality That Scales?</h2>
+            <h2 className="text-4xl font-bold text-white mb-8">Let’s build a QMS that grows with you</h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
               Let's discuss how we can transform your quality systems and prepare you for success.
             </p>

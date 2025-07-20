@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Globe, FileCheck, Zap, ChevronDown, FolderCheck, FileCode } from "lucide-react"
+import { ArrowRight, Globe, FileCheck, Zap, ChevronDown, FolderCheck, FileCode, ArrowRightIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
@@ -274,7 +274,7 @@ At LucidMind Consulting, we help you map the right regulatory route — one that
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">From Scalpel to Software — We Handle It All</h3>
                     <p className="text-gray-600">
-                      Whether it’s a traditional device, an AI-powered software (SaMD), or a wearable like a smartwatch that tracks health conditions, we’ve got your back. We’ll build your regulatory strategy, prep all your docs, and handle the back-and-forth with authorities so you don’t have to.<br/> No jargon, no black box — just clear, actionable steps.
+                      Whether it’s a traditional device, an AI-powered software (SaMD), or a wearable like a smartwatch that tracks health conditions, we’ve got your back. We’ll build your regulatory strategy, prep all your docs, and handle the back-and-forth with regulatory bodies.<br/> No jargon, no black box — just clear, actionable steps.
 Because compliance shouldn’t be a bottleneck — it should be your launchpad.
                     </p>
                   </div>
@@ -284,7 +284,7 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
                     <FileCode className="h-4 w-4 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Collaborative Execution for Dossier Developmen</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Collaborative Execution for Dossier Development</h3>
                     <p className="text-gray-600">
                       From 510(k), De Novo, Breakthrough designation, Tech file, and CER to Cybersecurity, IEC 62304, IEC 62366 documents and more; we prepare every required document with precision.  – We don’t just advise. We partner. Your goals become our mission.
 
@@ -313,7 +313,7 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
 
        {/* service  ended */}
       {/* Custom Offerings */}
-      <section className="py-20 bg-white">
+      <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -405,26 +405,39 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-4">
               {roadmapSteps.map((step, index) => (
-                <motion.div
-                  key={index}
-                  className="flex flex-col items-center text-center"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <div
-                    className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg`}
+                <>
+                  <motion.div
+                    key={index}
+                    className="flex flex-col items-center text-center"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: index * 0.2 }}
+                    viewport={{ once: true }}
                   >
-                    {index + 1}
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{step.step}</h3>
-                  <p className="text-gray-600">{step.description}</p>
-
-                  {/* {index < roadmapSteps.length - 1 && (
-                    <div className="hidden md:block  top-8 left-full w-full h-0.5 bg-gray-300 transform translate-x-2" />
-                  )} */}
-                </motion.div>
+                    <div
+                      className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 shadow-lg`}
+                    >
+                      {index + 1}
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{step.step}</h3>
+                    <p className="text-gray-600">{step.description}</p>
+                  </motion.div>
+                  {index < roadmapSteps.length - 1 && (
+                    <div className="flex md:flex-row flex-col items-center">
+                      {/* Arrow for large screens (right) */}
+                      <ArrowRightIcon className="hidden md:block h-12 w-24 text-gray-400" />
+                      {/* Arrow for small screens (down) */}
+                      <svg
+                        className="block md:hidden h-10 w-10 text-gray-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v14m0 0l-6-6m6 6l6-6" />
+                      </svg>
+                    </div>
+                  )}
+                </>
               ))}
             </div>
           </div>
