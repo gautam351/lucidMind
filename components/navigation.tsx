@@ -55,7 +55,7 @@ export default function Navigation() {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6">Get Started</Button>
+            {/* <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6">Get Started</Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,7 +88,7 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="px-4">
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full">Get Started</Button>
+              {/* <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full">Get Started</Button> */}
             </div>
           </div>
         </motion.div>

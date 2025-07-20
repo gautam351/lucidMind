@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Globe, FileCheck, Zap, ChevronDown, FolderCheck, FileCode, ArrowRightIcon } from "lucide-react"
+import { ArrowRight, Globe, FileCheck, Zap, ChevronDown, FolderCheck, FileCode, ArrowRightIcon, Handshake, BrainIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
@@ -269,7 +269,7 @@ At LucidMind Consulting, we help you map the right regulatory route — one that
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <FileCode className="h-4 w-4 text-blue-600" />
+                    <Handshake className="h-4 w-4 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">From Scalpel to Software — We Handle It All</h3>
@@ -293,7 +293,7 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <Zap className="h-4 w-4 text-purple-600" />
+                    <BrainIcon className="h-4 w-4 text-purple-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Pragmatic, No-Fluff Approach</h3>
