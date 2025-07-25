@@ -465,8 +465,8 @@ Because compliance shouldn’t be a bottleneck — it should be your launchpad.
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <a
-              href={`mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
-                "Inquiry from LucidMind Website"
+              href={`mailto:rajzaveri10@gmail.com?subject=${encodeURIComponent(
+                "Inquiry to LucidMind Consulting"
               )}&body=${encodeURIComponent(
                 "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information. \n Thank you!"
               )}`}

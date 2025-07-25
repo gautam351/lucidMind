@@ -11,10 +11,11 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "LucidMind Consulting - Medical Device Regulatory & Quality",
   description:
-    "Medical meets Clarity. Regulatory made simple. Bringing your medical device to market, without the maze.",
+    "We help medtech teams clear regulatory hurdles and build scalable QMS—whether it’s hardware, software, or AI-driven innovation.",
   keywords: "medical device, regulatory consulting, quality management, FDA, EU MDR, ISO 13485",
   icons:{
-    icon: "/logometa-removebg-preview.png", // Path to your favicon in the public directory
+    icon: "/logometa-removebg-preview.png", 
+     // Path to your favicon in the public directory
   },
     generator: 'v0.dev'
 }

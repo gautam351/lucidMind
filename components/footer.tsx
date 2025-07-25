@@ -27,15 +27,15 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center justify-center mx-auto">
         <Link href="/" className="flex items-center justify-center">
           <img
-            src="/logo-footer (2).png"
+            src="/footerLOgowhite.png"
             alt="Logo"
-            className="h-20 w-auto max-w-xs object-contain mb-1"
-            style={{ maxHeight: "60px" }}
+            className="h-20  max-w-xs object-contain mb-1"
+            style={{ maxHeight: "60px" ,width:"80%"}}
           />
         </Link>
-        <p className="text-gray-400 mb-6 max-w-md">
+        {/* <p className="text-gray-400 mb-6 max-w-md">
          Compliance meets Clarity <br></br> Simplifying medical device regulatory and quality challenges. 
-        </p>
+        </p> */}
         <div className="flex space-x-4 justify-center">
           <motion.a
           href="https://www.linkedin.com/in/raj-zaveri-35013b174/"
@@ -47,8 +47,8 @@ export default function Footer() {
           <Linkedin className="h-5 w-5" />
           </motion.a>
           <motion.a
-          href={`mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
-                "Inquiry from LucidMind Website"
+          href={`mailto:rajzaveri10@gmail.com?subject=${encodeURIComponent(
+                "Inquiry to LucidMind Consulting"
               )}&body=${encodeURIComponent(
                 "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information. \n Thank you!"
               )}`}
@@ -59,7 +59,7 @@ export default function Footer() {
           <Mail className="h-5 w-5" />
           </motion.a>
           <motion.a
-          href="tel:+1234567890"
+          href="tel:+91 8369438297"
           className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors duration-200"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

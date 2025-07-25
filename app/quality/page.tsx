@@ -140,8 +140,12 @@ export default function QualityPage() {
 Your QMS should reflect your product, your people, and your stage of growth.
                   </p>
                <p className="text-gray-700 mb-6">
-                At LucidMind consulting, We design clean, smart and scalable QMS that are actually usable. We closely work with each team of your organization to understand the gaps and build processes that are tailored to your unique needs and compliant with the relevant QS regulations: ISO 13485, FDA QSR (21 CFR Part 820), and EU MDR
+                At LucidMind consulting, we design clean, smart and scalable QMS that are actually usable. We closely work with each team of your organization to understand the gaps and build processes that are tailored to your unique needs and compliant with the relevant QS regulations: ISO 13485, FDA QSR (21 CFR Part 820), and EU MDR
 
+                  </p>
+
+                  <p className="text-gray-700 ">
+                    We also perform comprehensive internal audits that prepare you to successfully clear external ISO audits and obtain ISO 13485 certification.
                   </p>
             </motion.div>
 
@@ -152,11 +156,12 @@ Your QMS should reflect your product, your people, and your stage of growth.
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl">
                 <img
-                  src="/Gemini_Generated_Image_sgeoftsgeoftsgeo.png?height=800&width=500"
+                // style={{width:'100%' , height:'40%'}}
+                  src="/scalableqms1.png"
                   alt="Regulatory Strategy Visualization"
-                  className="w-full h-58 object-cover rounded-lg"
+                  className="w-full  h-65 rounded-lg mx-auto"
                 />
               </div>
             </motion.div>
@@ -166,7 +171,7 @@ Your QMS should reflect your product, your people, and your stage of growth.
 
      
       {/* Problem-Solution Section */}
-      <section className="py-16  bg-white">
+      <section className="py-0  bg-white  pb-16">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Problems */}
@@ -364,7 +369,7 @@ Your QMS should reflect your product, your people, and your stage of growth.
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-8">Let’s build a QMS that grows with you</h2>
+            <h2 className="text-4xl font-bold text-white mb-8">Build a QMS that grows with you</h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
               Let's discuss how we can transform your quality systems and prepare you for success.
             </p>
@@ -377,8 +382,8 @@ Your QMS should reflect your product, your people, and your stage of growth.
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <a
-              href={`mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
-                "Inquiry from LucidMind Website"
+               href={`mailto:rajzaveri10@gmail.com?subject=${encodeURIComponent(
+                "Inquiry to LucidMind Consulting"
               )}&body=${encodeURIComponent(
                 "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information. \n Thank you!"
               )}`}

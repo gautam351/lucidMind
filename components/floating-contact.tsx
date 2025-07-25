@@ -18,8 +18,8 @@ export default function FloatingContact() {
     {
       icon: Mail,
       label: "Email Us",
-      action: `mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
-                "Inquiry from LucidMind Website"
+      action: `mailto:rajzaveri10@gmail.com?subject=${encodeURIComponent(
+                "Inquiry to LucidMind Consulting"
               )}&body=${encodeURIComponent(
                 "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information.\n Thank you!"
               )}`,

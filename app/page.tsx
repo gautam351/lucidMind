@@ -11,13 +11,13 @@ const testimonials = [
     quote: "Finally, regulatory consulting that speaks our language - clear, actionable, results-driven.",
     author: "Rajeev Nohria",
     title: "CEO",
-    company: "Better Diagnostics",
+    company: "Better Diagnostics AI Corp.",
   },
   {
-    quote: "LucidMind transformed our regulatory approach. What seemed impossible became achievable.",
-    author: "Sarah Chen",
-    title: "CEO, MedTech Innovations",
-    company: "Series B Startup",
+    quote: "Precise and Pragmatic. LucidMind analyzed our regulatory needs, decoded the complexity, and delivered clear, actionable guidance.",
+    author: "Sudeep Bath",
+    title: "Founder & CEO",
+    company: "HealthArc",
   },
   // {
   //   quote: "Their quality system implementation saved us 6 months and countless headaches.",
@@ -304,8 +304,8 @@ You innovate — we handle the regulatory grind
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <a
-              href={`mailto:info@lucidmindconsulting.com?subject=${encodeURIComponent(
-                "Inquiry from LucidMind Website"
+              href={`mailto:rajzaveri10@gmail.com?subject=${encodeURIComponent(
+                "Inquiry to LucidMind Consulting"
               )}&body=${encodeURIComponent(
                 "Hi LucidMind Team,\n I'am interested in learning more about your regulatory consulting services. Please contact me with more information. \n Thank you!"
               )}`}
