@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     icon: "/favicon.png", 
      // Path to your favicon in the public directory
   },
+  verification:{
+    google:'McMVOQUvz4GIeWKwmJeSZO5NfoVZ2r27TV8ehLCpgR0'
+  },
     generator: 'v0.dev'
 }
 
