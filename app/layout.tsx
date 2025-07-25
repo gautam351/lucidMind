@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "We help medtech teams clear regulatory hurdles and build scalable QMS—whether it’s hardware, software, or AI-driven innovation.",
   keywords: "medical device, regulatory consulting, quality management, FDA, EU MDR, ISO 13485",
   icons:{
-    icon: "/logometa-removebg-preview.png", 
+    icon: "/favicon.png", 
      // Path to your favicon in the public directory
   },
     generator: 'v0.dev'
